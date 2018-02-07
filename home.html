@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/main.css" rel="stylesheet" type="text/css"/>
+        <link href="css/home.css" rel="stylesheet" type="text/css"/>
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div class="header">
+            <div class="header-layer"></div>
+        </div>
+        <div class="navigator">
+            <div class="tab">
+                <button class="tablinks active" id="t1" onclick="openNews(event, 'Home')">Home</button>
+                <button class="tablinks" id="t2"  onclick="openNews(event, 'Master')">Master</button>
+                <button class="tablinks" id="t3"  onclick="openNews(event, 'Servant')">Servant</button>
+                <button class="tablinks" id="t4"  onclick="openNews(event, 'Guide')">Guide</button>
+                <button class="tablinks" id="t5"  onclick="openNews(event, 'Event')">Event</button>
+                <button class="tablinks" id="t6"  onclick="openNews(event, 'FAQ')">FAQ</button>
+            </div>
+
+            <div id="Home" class="tabcontent" style="display:block;">
+                <div class="navigator-item">
+                    <a href="#">
+                        <span class="news-date">05/24/2017</span>
+                        <span class="news-typo">9 Million Downloads Celebration!</span>
+                    </a>
+                </div>
+                <a href="#">
+                    <div class="navigator-item">
+                        <span class="news-date">05/23/2017</span>
+                        <span class="news-typo">Hunting Quest 3 is here!</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="navigator-item">
+                        <span class="news-date">05/02/2017</span>
+                        <span class="news-typo">Servant Strengthening Quest is here!</span>
+                    </div>
+                </a>
+
+            </div>
+
+            <div id="Master" class="tabcontent">
+                <div class="navigator-item">
+                    <a href="#">
+                        <span class="news-date">06/25/2017</span>
+                        <span class="news-typo">Rerun: Celestial Demon Tales - Onigashima</span>
+                    </a>
+                </div>
+                <a href="#">
+                    <div class="navigator-item">
+                        <span class="news-date">12/03/2017</span>
+                        <span class="news-typo">Rerun: Restless Drunk Demon's Capital - Rashoumon</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="navigator-item">
+                        <span class="news-date">01/04/2017</span>
+                        <span class="news-typo">Fate/GUDAGUDA Meiji Ishin</span>
+                    </div>
+                </a>
+            </div>
+
+            <div id="Servant" class="tabcontent">
+                <table>
+                    <tr>
+                        <th>No</th>
+                        <th>Image</th>
+                        <th>Name</th>    
+                    </tr>
+                    <tr class="scale">
+                        <td>01</td>
+                        <td><img class="servant_icon" src="IMG/servant_icon/servant_0031.png" alt=""/></td>
+                        <td>Aturia Pendragon [Alter]</td>
+                    </tr>
+                    <tr class="scale">
+                        <td>02</td>
+                        <td><img class="servant_icon" src="IMG/servant_icon/servant_0041.png" alt=""/></td>
+                        <td>Aturia Pendragon [Lily]</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="Guide" class="tabcontent">
+            </div>
+            <div id="Event" class="tabcontent">
+            </div>
+            <div id="FAQ" class="tabcontent">
+            </div>
+        </div>
+        <script>
+            function openNews(evt, tabs) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(tabs).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+        </script>
+
+
+    </body>
+</html>

@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url("fonts/Roboto-Regular.ttf");
+}
+
+
+.swiper-wrapper{
+    margin-top: 10%;
+
+}
+.swiper-slide {
+    width: 250px;
+    overflow: visible;
+
+
+}
+.swiper-container{
+    width: 90%;
+    height: 90%;
+}
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #100c1e;
+    color: rgba(255,255,255,0.55);
+}
+tr{
+
+
+}
+th, td {
+    padding: 15px;
+    text-align: center;
+
+
+}
+
+.scale{
+    transition: all .2s ease-in-out; 
+}
+
+.scale:hover {
+    background-color:#372968;
+    transform: scale(1.006);
+    color: white;
+}
+.servant_icon{
+    width: 60px;
+}
+

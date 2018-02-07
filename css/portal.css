@@ -1,0 +1,173 @@
+div{
+    display:block;
+}
+
+body {
+    width:100%;
+    background-color: black;
+    margin: auto;
+    font-family: 'Roboto';
+    font-size: 22px;
+    max-width: 1920px;
+    min-width: 985px;
+
+
+}
+section{
+
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+}
+
+.section-1{
+    height: 1000px;;
+    background-image: url(../IMG/BG_1.jpg); 
+}
+
+.section-2{
+
+    background-image: url(../IMG/BG_2.jpg);    
+
+}
+
+.left-side{
+    margin-left: 5%;
+    width: 30%;
+    height: 100%;
+}
+
+
+.news-panel{
+    padding-top: 30px;
+    min-width: 435px;
+    max-width: 100%;
+    margin: auto;
+
+}
+#b1{
+    width: 32%;
+    background-color: #BAD616;
+    color: black;
+    float:left;
+}
+#b2{
+    width: 65%;
+    background-color: rgba(255,255,255,0.15);
+    color: white;
+    float: right;
+
+}
+.news-item{
+
+    font-size: 70%;
+}
+.news-date{
+    float: left;
+}
+.news-typo{
+    width: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+    float: left;
+    margin-left: 10%;
+}
+
+.button {
+    font-family: 'Roboto';
+    font-size: 0.6em;
+    height: 40px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+
+
+}
+
+/* Style the tab */
+div.tab {
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(255,255,255,0.0);
+    border:none;
+}
+
+#t1{
+    width: 25%;
+}
+#t2{
+    width: 25%;
+}
+#t3{
+    width: 25%;
+}
+#t4{
+    width: 25%;
+}
+.news{
+    padding-top: 80px;
+}
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: rgba(255,255,255,0.0);
+    border: none;
+    border-bottom: 1.5px solid rgba(255,255,255,0.25);
+    outline: none;
+    cursor: pointer;
+    padding:  9px 0px 14px 5px;
+    transition: 0.3s;
+    font-family: 'Roboto';
+    font-size: 0.6em;
+    color: rgba(255,255,255,0.25);
+    margin: auto;
+    float:left;
+    text-align: left;
+
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    color: white;
+    border: none;
+    border-bottom: 3px solid white;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    color: white;
+    border: none;
+    border-bottom: 3px solid white;
+}
+
+/* Style the tab content */
+.tabcontent {
+    background-color: rgba(255,255,255,0.0);
+    display: none;
+    padding: 16px 12px;
+    border: none;
+    color: white;
+    line-height: 1.5;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
+a {
+    color: rgba(255,255,255,0.25);
+    transition: 0.5s;
+}
+a:hover { color:white; }
+
